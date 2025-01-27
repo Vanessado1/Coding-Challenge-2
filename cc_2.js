@@ -16,3 +16,13 @@ let sum = scores.reduce((acc, score) => acc + score, 0);
 let average = sum / scores.length;
 console.log(`Average Score: ${average}`);// Output: Average Score: 71.2
 
+//Task 3: Working with Objects
+let employee = {
+    name: 'Minnie Jane',
+    age: 21,
+    department: 'Financee',
+    isActive: true};
+console.log(employee);// Output: {name: Minnie Jane, age: 21, department: Financee, isActive: true}
+employee.department = 'HR';
+employee.position = 'Associate';
+console.log(employee);// Output: {name: Minnie Jane, age: 21, department: HR, isActive: true, position: Associate}
