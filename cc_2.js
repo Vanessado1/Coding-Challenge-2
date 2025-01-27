@@ -31,8 +31,7 @@ console.log(employee);// Output: {name: Minnie Jane, age: 21, department: HR, is
 let customers = [
     {name: 'vic', email: 'vickynicky@gmail.com', purchaseAmount: 150},
     {name: 'jane', email: 'maryjane@gmail.com', purchaseAmount: 200},
-    {name: 'john', email: 'michealjohn@gmail.com', purchaseAmount: 100}
-]
+    {name: 'john', email: 'michealjohn@gmail.com', purchaseAmount: 100}];
 console.log(customers);// Output customers array
 customers.push({name: 'jorge', email: 'jorgegomez@gmail.com', purchaseAmount: 250});
 console.log(customers);// Output updated customers array
@@ -40,10 +39,10 @@ console.log(customers);// Output updated customers array
 //Task 5: Object Methods
 let order = {
     orderID: 12485,
-    customerName: Jones,
-    orderAmount: 60};
-console.log(order);// Output: {orderID: 12485, customerName: Jones, orderAmount: 29.65}
-order.getTotal = function() {
-    return this.orderAmount * 0.10;
-}
-console.log(order.getTotal());// Output: 6
+    customerName: 'Jones',
+    orderAmount: 60,
+    calculateTax: function(){
+    return this.orderAmount * 0.10;}
+};
+console.log(order);// Output: {orderID: 12485, customerName: Jones, orderAmount: 60, calculateTax: ƒ}
+console.log(order.calculateTax());// Output: 6
