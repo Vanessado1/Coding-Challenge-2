@@ -36,3 +36,14 @@ let customers = [
 console.log(customers);// Output customers array
 customers.push({name: 'jorge', email: 'jorgegomez@gmail.com', purchaseAmount: 250});
 console.log(customers);// Output updated customers array
+
+//Task 5: Object Methods
+let order = {
+    orderID: 12485,
+    customerName: Jones,
+    orderAmount: 60};
+console.log(order);// Output: {orderID: 12485, customerName: Jones, orderAmount: 29.65}
+order.getTotal = function() {
+    return this.orderAmount * 0.10;
+}
+console.log(order.getTotal());// Output: 6
