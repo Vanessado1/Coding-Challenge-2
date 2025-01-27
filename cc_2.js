@@ -6,3 +6,13 @@ console.log(products);// Output: [Blender, Oven, Microwave, Toaster, CoffeeMaker
 let removedProduct = products.pop();
 console.log(removedProduct);// Output: Juicer
 console.log(products);// Output: [Blender, Oven, Microwave, Toaster, CoffeeMaker]
+
+//Task 2: Accessing and Modifying Arrays
+let scores = [78, 85, 91, 87, 76];
+console.log(scores);// Output: [78, 85, 91, 87, 76]
+scores.splice(2,1,30);
+console.log(`Updated Scores:${scores}`);// Output: Updated Scores:78,85,30,87,76
+let sum = scores.reduce((acc, score) => acc + score, 0);
+let average = sum / scores.length;
+console.log(`Average Score: ${average}`);// Output: Average Score: 71.2
+
