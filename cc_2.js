@@ -26,3 +26,13 @@ console.log(employee);// Output: {name: Minnie Jane, age: 21, department: Financ
 employee.department = 'HR';
 employee.position = 'Associate';
 console.log(employee);// Output: {name: Minnie Jane, age: 21, department: HR, isActive: true, position: Associate}
+
+//Task 4: Array of Objects 
+let customers = [
+    {name: 'vic', email: 'vickynicky@gmail.com', purchaseAmount: 150},
+    {name: 'jane', email: 'maryjane@gmail.com', purchaseAmount: 200},
+    {name: 'john', email: 'michealjohn@gmail.com', purchaseAmount: 100}
+]
+console.log(customers);// Output customers array
+customers.push({name: 'jorge', email: 'jorgegomez@gmail.com', purchaseAmount: 250});
+console.log(customers);// Output updated customers array
